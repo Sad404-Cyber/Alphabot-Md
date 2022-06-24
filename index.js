@@ -1959,44 +1959,34 @@ break
                 alpha.sendText(m.chat, `⭔ *Hasil :* ${anu.message.result}\n⭔ *Catatan :* ${anu.message.catatan}`, m)
             }
             break 
-//ephoto360
-case 'youtubegold':case 'youtubesilver':case 'facebookgold':case 'facebooksilver':case 'instagramgold':case 'instagramsilver':case 'twittergold':case 'twittersilver':case 'retrotext':case 'halloweenbats':case 'texthalloween':case 'cardhalloween':case 'birthdaycake':case 'thundertext':case 'icetext':case 'milkcake':case 'snowontext':case 'metalstar':case 'dragonfire':case 'zombie3d':case 'merrycard':case 'generalexam': case 'viettel':case 'embroider':case 'graffititext':case 'graffititext2':case 'graffititext3':case 'covergraffiti':case 'moderngold':case 'capercut':case 'lovecard':case 'heartflashlight':case 'heartcup':case 'sunglightshadow':case 'graffiti3d':case 'moderngoldsilver':case 'moderngold2':case 'modengold3':case 'fabrictext':case 'masteryavatar':case 'messagecoffee':case 'announofwin':case 'writeblood':case 'horrorletter':case 'writehorror':case 'shirtclub':case 'angelwing':case 'christmasseason':case 'projectyasuo':case 'lovelycute':case 'womansday':case 'covergamepubg':case 'nameonheart':case 'funnyhalloween':case 'lightningpubg':case 'greetingcardvideo': case 'christmascard': case 'galaxybat':case 'writegalaxy':case 'starsnight':case 'noeltext':case 'textcakes':case 'pubgbirthday':case 'galaxywallpaper':case 'pubgglicthvideo': case 'pubgmascotlogo':case 'realembroidery':case 'vintagetelevision':case 'funnyanimations':case 'glowingtext':case 'textonglass':case 'cartoonstyle':case 'multicolor':case 'watercolor2':case 'textsky':case 'summerbeach':case '1917text':case 'puppycute':case 'rosebirthday':{
-if (!text) return reply(`Kirim perintah ${prefix + command} *zeeone*`)
-reply(lang.wait())
-let texpro = global.api('alfa', '/api/ephoto360/'+command, {text:text}, 'apikey')
-sendFileFromUrl(from, texpro, lang.ok(), m)
-.catch((err) => {
-                    reply(lang.err())
-                })
-}
-break
-case 'steellettering':case 'letterstext':case 'barcashirt':case 'premiercup':case 'stylepoligon':case 'lifebuoys':case 'juventusshirt':{
-if (!text) return reply(`Kirim perintah ${prefix + command} *zeeone|ofc*`)
-if (!text.includes('|')) return reply(`Kirim perintah ${prefix + command} *zeeone|ofc*`)
-mm = args.join(' ')
-m1 = mm.split("|")[0];
-m2 = mm.split("|")[1]; 
-reply(lang.wait())
-let texpro = global.api('alfa', '/api/ephoto360/'+command, {text:m1 , text2:m2}, 'apikey')
-sendFileFromUrl(from, texpro, lang.ok(), m)
-.catch((err) => {
-                    reply(lang.err())
-                })
-}
-break
-
-
-case 'blackpink':case 'rainbow2':case 'water_pipe':case 'halloween':case 'sketch':case 'sircuit':case 'discovery':case 'metallic2':case 'fiction':case 'demon':case 'transformer':case 'berry':case 'thunder':case 'magma':case '3dstone':case 'neon':case 'glitch':case 'harry_potter':case 'embossed':case 'broken':case 'papercut':case 'gradient':case 'glossy':case 'watercolor':case 'multicolor':case 'neon_devil':case 'underwater':case 'bear':case 'wonderfulg':case 'christmas':case 'neon_light':case 'snow':case 'cloudsky':case 'luxury2':case 'gradient2':case 'summer':case 'writing':case 'engraved':case 'summery':case '3dglue':case 'metaldark':case 'neonlight':case 'oscar':case 'minion':case 'holographic':case 'purple':case 'glossyb':case 'deluxe2':case 'glossyc':case 'fabric':case 'neonc':case 'newyear':case 'newyear2':case 'metals':case 'xmas':case 'blood':case 'darkg':case 'joker':case 'wicker':case 'natural':case 'firework':case 'skeleton':case 'balloon':case 'balloon2':case 'balloon3':case 'balloon4':case 'balloon5':case 'balloon6':case 'balloon7':case 'steel':case 'gloss':case 'denim':case 'decorate':case 'decorate2':case 'peridot':case 'rock':case 'glass':case 'glass2':case 'glass3':case 'glass4':case 'glass5':case 'glass6':case 'glass7':case 'glass8':case 'captain_as2':case 'robot':case 'equalizer':case 'toxic':case 'sparkling':case 'sparkling2':case 'sparkling3':case 'sparkling4':case 'sparkling5':case 'sparkling6':case 'sparkling7':case 'decorative':case 'chocolate':case 'strawberry':case 'koifish':case 'bread':case 'matrix':case 'blood2':case 'neonligth2':case 'thunder2':case '3dbox':case 'neon2':case 'roadw':case 'bokeh':case 'gneon':case 'advanced':case 'dropwater':case 'wall':case 'chrismast':case 'honey':case 'drug':case 'marble':case 'marble2':case 'ice':case 'juice':case 'rusty':case 'abstra':case 'biscuit':case 'wood':case 'scifi':case 'metalr':case 'purpleg':case 'shiny': case 'jewelry':case 'jewelry2':case 'jewelry3':case 'jewelry4':case 'jewelry5':case 'jewelry6':case 'jewelry7':case 'jewelry8':case 'metalh':case 'golden':case 'glitter':case 'glitter2':case 'glitter3':case 'glitter4':case 'glitter5':case 'glitter6':case 'glitter7':case 'metale':case 'carbon':case 'candy':case 'metalb':case 'gemb':case '3dchrome':case 'metalb2':case 'metalg':
-{
-if (!text) return reply(`Kirim perintah ${prefix + command} *zeeone*`)
-reply(lang.wait())
-let texpro = global.api('alfa', '/api/textpro/'+command, {text:text}, 'apikey')
-sendFileFromUrl(from, texpro, lang.ok(), m)
-.catch((err) => {
-                    reply(lang.err())
-                })
-}
-break
+// Photo Oxy //
+        case 'shadow':
+        case 'cup':
+        case 'cup1':
+        case 'romance':
+        case 'smoke':
+        case 'burnpaper':
+        case 'lovemessage':
+        case 'undergrass':
+        case 'love':
+        case 'coffe':
+        case 'woodheart':
+        case 'woodenboard':
+        case 'summer3d':
+        case 'wolfmetal':
+        case 'nature3d':
+        case 'underwater':
+        case 'golderrose':
+        case 'summernature':
+        case 'letterleaves':
+        case 'glowingneon':
+        case 'fallleaves':
+        case 'flamming':
+        case 'harrypotter':
+        case 'carvedwood':
+            if (!text) return reply(`Ex: ${prefix + command} nama|heroes\nUsage: ${prefix + command} Hafidz Abdillah`)
+            alpha.sendMessage(from, { image: { url: `https://api.lolhuman.xyz/api/photooxy1/${command}?apikey=sayajiro&text=${text}` } })
+            break
 case 'chika': case 'rikagusriani':  case 'bocil': case 'geayubi': case 'santuy': case 'ukhty': case 'asupan':  case 'delvira': case 'ayu': case 'bunga': case 'aura': case 'nisa': case 'ziva': case 'yana': case 'viona': case 'syania': case 'riri': case 'syifa': case 'mama_gina': case 'alcakenya': case 'mangayutri': {
 	reply(lang.wait())
 	let to = global.api('alfa', '/api/asupan/'+command, {}, 'apikey')
